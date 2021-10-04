@@ -6,8 +6,10 @@ import PlayerId from "./src/components/PlayerId";
 import BoardGame from "./src/objects/BoardGame";
 
 const $root = document.querySelector("#root")
-const $htmlBoardGame = BoardGame(6)
-const $htmlPlayerId = PlayerId(2)
 
 
-$root.insertAdjacentHTML("beforeend", $htmlPlayerId + $htmlBoardGame)
+$root.insertAdjacentHTML("beforeend", `
+    ${PlayerId("Player1")}
+    ${PlayerId("Player2")}
+    ${BoardGame(6)}
+`)
