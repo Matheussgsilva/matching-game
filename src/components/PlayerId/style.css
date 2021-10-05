@@ -1,8 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-
-p {
-    font-family: 'Press Start 2P', sans-serif;
-    font-size: 10px;
+.player-id {
+    font-size: 1rem;
     font-weight: 400;
     color: var(--color-floral-white);
 }

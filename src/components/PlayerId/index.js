@@ -2,7 +2,7 @@ import "./style.css"
 
 function PlayerId(n) {
     return`
-    <p>${n}</p>
+    <p class="player-id">${n}</p>
     `
 }
 
