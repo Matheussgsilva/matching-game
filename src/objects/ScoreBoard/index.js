@@ -1,4 +1,5 @@
 import PlayerId from "../../components/PlayerId";
+import "./style.css";
 
 function ScoreBoard() {
     return /*html*/`
