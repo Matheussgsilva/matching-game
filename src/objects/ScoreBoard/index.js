@@ -1,5 +1,6 @@
 import PlayerId from "../../components/PlayerId";
 import PlayerScore from "../../components/PlayerScore";
+import VsPlayer from "../../components/VsPlayer";
 import "./style.css";
 
 function ScoreBoard() {
@@ -8,7 +9,7 @@ function ScoreBoard() {
         <header class="score-board">
             ${PlayerId("Player1")}
             ${PlayerScore()}
-            <p>vs</p>
+            ${VsPlayer()}
             ${PlayerId("Player2")}
             ${PlayerScore()}
         </header>
