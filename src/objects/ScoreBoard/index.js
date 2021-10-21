@@ -8,10 +8,10 @@ function ScoreBoard() {
         <div class="arrow-down"><img src="../../images/IconArrowDown.png"></div>
         <header class="score-board">
             ${PlayerId("Player1")}
-            ${PlayerScore()}
+            ${PlayerScore(1)}
             ${VsPlayer()}
+            ${PlayerScore(2)}
             ${PlayerId("Player2")}
-            ${PlayerScore()}
         </header>
     `
 }
