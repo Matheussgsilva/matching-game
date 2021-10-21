@@ -2,10 +2,10 @@ import "./style.css"
 
 function PlayerScore(points = 0) {
     return /*html*/`
-        <ol data-points="${points}">
-            <li class="one">Um</li>
-            <li class="two">Dois</li>
-            <li class="three">Três</li>
+        <ol class="player-score" data-points="${points}">
+            <li class="pointer">Um</li>
+            <li class="pointer">Dois</li>
+            <li class="pointer">Três</li>
         </ol>
     `
 }

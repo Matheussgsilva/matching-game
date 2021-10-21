@@ -8,7 +8,7 @@ function ScoreBoard() {
         <div class="arrow-down"><img src="../../images/IconArrowDown.png"></div>
         <header class="score-board">
             ${PlayerId("Player1")}
-            ${PlayerScore(1)}
+            ${PlayerScore(3)}
             ${VsPlayer()}
             ${PlayerScore(2)}
             ${PlayerId("Player2")}

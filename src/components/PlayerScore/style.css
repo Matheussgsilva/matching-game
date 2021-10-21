@@ -1,17 +1,33 @@
 .player-score {
+    display: flex;
+    gap: 1px;
+    box-sizing: border-box;
     width: 50px;
     height: 20px;
-    left: 174px;
-    top: 20px;
-    background-color: var(--color-old-silver);
+    background-color: var(--color-floral-white);
     border: 2px solid var(--color-fiery-rose);
-    box-sizing: border-box;
-    border-collapse: collapse;
+    padding: 1px;
 }
 
-td {
-    /*position: absolute;*/
-    width: 44px;
-    height: 14px;
-    border: 1px solid var(--color-floral-white);
+.player-score > .pointer {
+    background-color: var(--color-old-silver);
+    text-indent: -999999px;
+    overflow: hidden;
+    width: 33.33%;
+}
+
+.player-score[data-points="1"] > .pointer:first-child {
+    background-color: var(--color-mantis);
+}
+
+.player-score[data-points="2"] {
+    flex-direction: row-reverse;
+}
+
+.player-score[data-points="2"] > .pointer:nth-child(n+2) {
+    background-color: var(--color-mantis);
+}
+
+.player-score[data-points="3"] > .pointer {
+    background-color: var(--color-mantis);
 }
